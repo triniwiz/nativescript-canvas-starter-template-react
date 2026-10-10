@@ -127,9 +127,6 @@ The home screen links to one page per renderer. Each page has its own folder in
   CommonJS packages such as `react` without their named exports, and the app
   fails to start with "The requested module 'react' does not provide an
   export named 'Fragment'".
-- On Windows, the PixiJS demo only runs on WebGL for now. On WebGPU it fails at
-  startup until [canvas#161](https://github.com/NativeScript/canvas/pull/161)
-  is released.
 - On Windows, `Number.prototype.toLocaleString()` throws, so the demos format
   numbers with `formatCount` from `src/format.ts`.
 
