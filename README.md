@@ -145,8 +145,6 @@ These can be removed once the fixes are released:
 
 - `@nativescript/core` and `@nativescript/vite` are installed from a pkg.pr.new
   build (`c136c4b`) of [NativeScript/NativeScript](https://github.com/NativeScript/NativeScript).
-- `@triniwiz/nativescript-masonkit` is pinned to `1.0.0-beta.107`. On iOS,
-  later betas (up to `beta.110`) clip the descenders of the last line of text.
 - `overrides` pins the `@nativescript/canvas*` packages to `3.0.0-beta.4`.
   They depend on each other with `"*"`, which doesn't match prereleases.
 - `@nativescript/windows` is pinned to an exact alpha, because a caret range
