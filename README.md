@@ -127,9 +127,6 @@ The home screen links to one page per renderer. Each page has its own folder in
   CommonJS packages such as `react` without their named exports, and the app
   fails to start with "The requested module 'react' does not provide an
   export named 'Fragment'".
-- On Windows, the PixiJS demo only runs on WebGL for now. On WebGPU it fails at
-  startup until [canvas#161](https://github.com/NativeScript/canvas/pull/161)
-  is released.
 - On Windows, `Number.prototype.toLocaleString()` throws, so the demos format
   numbers with `formatCount` from `src/format.ts`.
 
@@ -147,8 +144,6 @@ These can be removed once the fixes are released:
   build (`c136c4b`) of [NativeScript/NativeScript](https://github.com/NativeScript/NativeScript).
 - `overrides` pins the `@nativescript/canvas*` packages to `3.0.0-beta.4`.
   They depend on each other with `"*"`, which doesn't match prereleases.
-- `@nativescript/windows` is pinned to an exact alpha, because a caret range
-  would also match older, incompatible betas.
 - `react-workarounds.mjs` swaps the React renderer's `src/dom.js` for
   `src/react-dom.ts`. The original copies every DOMiNATIVE class onto
   `globalThis` (`Image`, `Document`, `Event`, `HTMLElement`, ...), replacing the
