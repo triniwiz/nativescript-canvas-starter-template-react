@@ -144,8 +144,6 @@ These can be removed once the fixes are released:
   build (`c136c4b`) of [NativeScript/NativeScript](https://github.com/NativeScript/NativeScript).
 - `overrides` pins the `@nativescript/canvas*` packages to `3.0.0-beta.4`.
   They depend on each other with `"*"`, which doesn't match prereleases.
-- `@nativescript/windows` is pinned to an exact alpha, because a caret range
-  would also match older, incompatible betas.
 - `react-workarounds.mjs` swaps the React renderer's `src/dom.js` for
   `src/react-dom.ts`. The original copies every DOMiNATIVE class onto
   `globalThis` (`Image`, `Document`, `Event`, `HTMLElement`, ...), replacing the
