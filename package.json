@@ -26,7 +26,7 @@
     "@nativescript/tailwind": "~4.0.10",
     "@nativescript/types": "~9.1.1",
     "@nativescript/vite": "https://pkg.pr.new/@nativescript/vite@3456c82",
-    "@nativescript/windows": "^1.0.0-beta.24",
+    "@nativescript/windows": "^1.0.0-beta.25",
     "@types/node": "~26.5.0",
     "@types/react": "^19.3.0",
     "@types/three": "~0.184.0",
